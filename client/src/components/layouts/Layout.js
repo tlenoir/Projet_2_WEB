@@ -9,7 +9,7 @@ class Layout extends Component {
             <div>
 
                 <div>
-                  {/*   <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <nav class="navbar navbar-expand-md navbar-light bg-light">
                         <a class="navbar-brand" >MrJoints Spearfishing</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@ class Layout extends Component {
                                 </li>
                             </ul>
                         </div>
-                    </nav> */}
+                    </nav>
 
 
                     {/* <ul>
