@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../asset/logoicon.png'
-
+import './layout.css'
 
 class Layout extends Component {
     render() {
@@ -40,14 +40,12 @@ class Layout extends Component {
                         </nav>
                     </div>
 
-
                     <div className="container-fluid">
                         <div className="row header">
                             <div className="col-md-12" id="ban">
                             </div>
                         </div>
                     </div>
-
                     <div>{this.props.children}</div>
                 </div>
 
@@ -84,7 +82,7 @@ class Layout extends Component {
                                                     <li>
                                                         <a href="#">Careers</a>
                                                     </li>
-                                                    
+
                                                 </ul>
                                             </div>
                                             <div class="col-md-6 item text">
