@@ -46,9 +46,10 @@ class Layout extends Component {
                             </div>
                         </div>
                     </div>
-                    <div>{this.props.children}</div>
-                </div>
 
+                    <div>{this.props.children}</div>
+
+                </div>
                 <section class="row">
                     <div class="col-md-12 footer-basic">
                         <footer>
