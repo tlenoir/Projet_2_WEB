@@ -88,8 +88,10 @@ class Layout extends Component {
                                             </div>
                                             <div class="col-md-6 item text">
                                                 <h3>Mr. Joints Spearfishing</h3>
-                                                <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus
-                            elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                                                <p>facebook : Mr.Joints Spearfishing Tahiti</p>
+                                                <p>mobile: +68987315673</p>
+                                                <p>e-mail: mr.joints.spearguns@gmail.com</p>
+                                                <p>address: BP10188 Paea 98711 Paea Tahiti French Polynesia</p>
                                             </div>
                                             <div class="col item social">
                                                 <a href="#">
