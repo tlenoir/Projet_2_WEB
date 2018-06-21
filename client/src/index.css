@@ -31,7 +31,7 @@ body {
 }
 
 .darkNavClass {
-  height: 78px;
+  height: 75px;
   background-color: #282d32;
   color: #ffffff;
 }
@@ -41,11 +41,19 @@ body {
 }
 
 .aNav {
-  font-family:'Annie Use Your Telescope', cursive;width:383px;font-size:19px;height:84px;
+  font-family:'Annie Use Your Telescope', cursive;
+  width: 380px;
+  font-size: 20px;
+  height: 95px;
+  color:#ffffff;
 }
 
 .navCol {
   width:648px;
+}
+
+.colorNav {
+  color:#ffffff;
 }
 
 .navigation-clean-button .navbar-brand {

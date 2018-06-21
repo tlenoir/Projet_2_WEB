@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from '../../asset/logoicon.png'
 
 
 class Layout extends Component {
@@ -9,36 +10,37 @@ class Layout extends Component {
             <div>
 
                 <div>
-                    <nav class="navbar navbar-expand-md navbar-light bg-light">
-                        <a class="navbar-brand" >MrJoints Spearfishing</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" ><Link to={'/'}>Home</Link><span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" ><Link to={'/Products'}>Product</Link></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" ><Link to={'/Lifestyles'}>Lifestyle</Link></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" ><Link to={'/about'}>Contact</Link></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                    <div>
+                        <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button darkNavClass">
+                            <div class="container-fluid">
+                                <a class="navbar-brand aNav"><Link to={'/'}>
+                                    <img class="img-fluid imgNav" src={logo} />Mr. Joints Spearfishing</Link></a>
+                                <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse navCol" id="navcol-1">
+                                    <ul class="nav navbar-nav ml-auto">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link colorNav">
+                                                <i class="fa fa-home"></i><Link to={'/'}>Accueil</Link></a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link colorNav"><Link to={'/Products'}>Produit</Link></a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link colorNav"><Link to={'/Lifestyles'}>Lifestyle</Link></a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link colorNav"><Link to={'/about'}>Contact</Link></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
 
 
-                    {/* <ul>
-                        <li><Link to={'/'}>Accueil</Link></li>
-                        <li><Link to={'/Products'}>Produit</Link></li>
-                        <li><Link to={'/Lifestyles'}>Lifestyle</Link></li>
-                        <li><Link to={'/about'}>Contact</Link></li>
-                    </ul> */}
                     <div className="container-fluid">
                         <div className="row header">
                             <div className="col-md-12" id="ban">
@@ -105,9 +107,17 @@ class Layout extends Component {
                         </footer>
                     </div>
                 </section>
+                {/* <ul>
+                        <li><Link to={'/'}>Accueil</Link></li>
+                        <li><Link to={'/Products'}>Produit</Link></li>
+                        <li><Link to={'/Lifestyles'}>Lifestyle</Link></li>
+                        <li><Link to={'/about'}>Contact</Link></li>
+                    </ul> */}
             </div >
+
         );
     }
+
 }
 
 export default Layout;
