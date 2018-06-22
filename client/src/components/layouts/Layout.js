@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../asset/logoicon.png';
-import ban from '../../asset/banniere.jpg';
 import './layout.css';
 
 
@@ -23,11 +22,7 @@ class Layout extends Component {
                         </div>
                     </div>
                 </div>
-                <div className='row'>
-                    <div className='col-md-12'>
-                        <img className='img-fluid d-none d-sm-block imgBan' src={ban} />
-                    </div>
-                </div>
+                
 
                 <div>{this.props.children}</div>
 

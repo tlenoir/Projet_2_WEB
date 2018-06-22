@@ -12,3 +12,14 @@ body {
   background-image: url("/client/src/asset/banniere.jpg");
   background-size: cover;
 }
+
+.titlepage {
+	line-height: 200px;
+	background: #081d33;
+	color: aliceblue;
+	position: relative;
+	align-content: center;
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 4em;
+	text-align: center;
+}
