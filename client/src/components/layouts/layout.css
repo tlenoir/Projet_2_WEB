@@ -15,15 +15,45 @@
   }
 }
 
-.darkNavClass {
-  height: 75px;
-  background-color: #282d32;
+.navStyle {
+  width: 650px;
+}
+@media (min-width:576px) {
+  .navBg {
+    background-color: #081d33d3;
+  }
+}
+@media (max-width:575px) {
+  .navBg {
+    background-color: #081d33;
+  }
+}
+
+/* .darkNavClass {
+  height: 50px;
+  background-color: #143352;
   color: #ffffff;
+} */
+@media (min-width:993px) {
+  .imgBan {
+    margin-top: -5%;
+  }
+}
+@media (max-width:992px) {
+  .imgBan {
+    margin-top: -5%;
+  }
+}
+@media (max-width:768px) {
+  .imgBan {
+    margin-top: -20%;
+  }
 }
 
 .imgNav {
   width: 110px;
 }
+
 
 .aNav {
   font-family: 'Annie Use Your Telescope', cursive;
@@ -109,7 +139,7 @@ a:visited {
 .footer-dark {
   padding: 50px 0;
   color: #f0f9ff;
-  background-color: #282d32;
+  background-color: #081d33;
 }
 
 .footer-dark h3 {

@@ -1,63 +1,76 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../../asset/logoicon.png'
+import logo from '../../asset/logoicon.png';
+import ban from '../../asset/banniere.jpg';
 import './layout.css'
 
 class Layout extends Component {
     render() {
         return (
-            <div>
+            <div /* className='container-fluid' */>
 
-                <div>
-                    <div>
-                        <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button darkNavClass">
-                            <div class="container-fluid">
-                                <a class="navbar-brand aNav"><Link to={'/'}>
-                                    <img class="img-fluid imgNav" src={logo} />Mr. Joints Spearfishing</Link></a>
-                                <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="navbar-toggler-icon"></span>
+
+
+                {/*  <div>
+                    <div class='sticky-top'>
+                        <nav className="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button darkNavClass navbar-static-top">
+                            <div className="container-fluid">
+                                <a className="navbar-brand aNav"><Link to={'/'}>
+                                    <img className="img-fluid imgNav" src={logo} />Mr. Joints Spearfishing</Link></a>
+                                <button className="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                                    <span className="sr-only">Toggle navigation</span>
+                                    <span className="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse navCol" id="navcol-1">
-                                    <ul class="nav navbar-nav ml-auto">
-                                        <li class="nav-item" role="presentation">
-                                            <a class="nav-link colorNav">
-                                                <i class="fa fa-home"></i><Link to={'/'}>Accueil</Link></a>
+                                <div className="collapse navbar-collapse navCol" id="navcol-1">
+                                    <ul className="nav navbar-nav ml-auto">
+                                        <li className="nav-item" role="presentation">
+                                            <a className="nav-link colorNav">
+                                                <i className="icon fa fa-home"></i><Link to={'/'}>Home</Link></a>
                                         </li>
-                                        <li class="nav-item" role="presentation">
-                                            <a class="nav-link colorNav"><Link to={'/Products'}>Produit</Link></a>
+                                        <li className="nav-item" role="presentation">
+                                            <a className="nav-link colorNav"><Link to={'/Products'}>Product</Link></a>
                                         </li>
-                                        <li class="nav-item" role="presentation">
-                                            <a class="nav-link colorNav"><Link to={'/Lifestyles'}>Lifestyle</Link></a>
+                                        <li className="nav-item" role="presentation">
+                                            <a className="nav-link colorNav"><Link to={'/Lifestyles'}>Lifestyle</Link></a>
                                         </li>
-                                        <li class="nav-item" role="presentation">
-                                            <a class="nav-link colorNav"><Link to={'/about'}>Contact</Link></a>
+                                        <li className="nav-item" role="presentation">
+                                            <a className="nav-link colorNav"><Link to={'/about'}>Contact</Link></a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </nav>
-                    </div>
-
-                    <div className="container-fluid">
-                        <div className="row header">
-                            <div className="col-md-12" id="ban">
-                            </div>
+                    </div> */}
+                <div className="navbar navbar-expand-md navbar-dark sticky-top navBg">
+                    <div className="container-fluid navStyle"><span className="text-white d-md-none"><Link to={'/'}><img className="img-fluid imgNav" src={logo} />Mr. Joints Spearfishing</Link></span><button className="btn btn-link navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"><span className="navbar-toggler-icon"></span></button>
+                        <div id="main-nav" className="navbar-collapse collapse">
+                            <ul className="navbar-nav nav-fill w-100">
+                                <li className="nav-item"><Link to={'/'}>Home</Link></li>
+                                <li className="nav-item"><Link to={'/Products'}>Product</Link></li>
+                                <li className="nav-item"><Link to={'/Lifestyles'}>Lifestyle</Link></li>
+                                <li className="nav-item"><Link to={'/about'}>Contact</Link></li>
+                            </ul>
                         </div>
                     </div>
-
-                    <div>{this.props.children}</div>
-
                 </div>
-                <section class="row">
-                    <div class="col-md-12 footer-basic">
+                <div className='row'>
+                    <div className='col-md-12'>
+                        <img className='img-fluid d-none d-sm-block imgBan' src={ban} />
+                    </div>
+                </div>
+
+                <div>{this.props.children}</div>
+
+
+                <section className="row">
+                    <div className="col-md-12 footer-basic">
                         <footer>
-                            <div class="footer-dark">
+                            <div className="footer-dark">
                                 <footer>
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-3 item">
+                                    <div className="container">
+                                        <div className="row">
+                                            <div className="col-sm-6 col-md-3 item">
                                                 <h3>Services</h3>
                                                 <ul>
                                                     <li>
@@ -71,7 +84,7 @@ class Layout extends Component {
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="col-sm-6 col-md-3 item">
+                                            <div className="col-sm-6 col-md-3 item">
                                                 <h3>About</h3>
                                                 <ul>
                                                     <li>
@@ -86,23 +99,23 @@ class Layout extends Component {
 
                                                 </ul>
                                             </div>
-                                            <div class="col-md-6 item text">
+                                            <div className="col-md-6 item text">
                                                 <h3>Mr. Joints Spearfishing</h3>
                                                 <p>facebook : Mr.Joints Spearfishing Tahiti</p>
                                                 <p>mobile: +68987315673</p>
                                                 <p>e-mail: mr.joints.spearguns@gmail.com</p>
                                                 <p>address: BP10188 Paea 98711 Paea Tahiti French Polynesia</p>
                                             </div>
-                                            <div class="col item social">
-                                                <a href="#">
-                                                    <i class="icon ion-social-facebook"></i>
+                                            <div className="col item social">
+                                                <a href="https://www.facebook.com/FranciJoints/">
+                                                    <i className="icon ion-social-facebook"></i>
                                                 </a>
-                                                <a href="#">
-                                                    <i class="icon ion-social-instagram"></i>
+                                                <a href="https://www.instagram.com/mr.joints_spearfishing_tahiti/?hl=fr">
+                                                    <i className="icon ion-social-instagram"></i>
                                                 </a>
                                             </div>
                                         </div>
-                                        <p class="copyright">Mr. Joints Spearfishing © 2018</p>
+                                        <p className="copyright">Mr. Joints Spearfishing © 2018</p>
                                     </div>
                                 </footer>
                             </div>
