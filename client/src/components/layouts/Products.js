@@ -10,6 +10,49 @@ class Products extends Component {
                         Products
                     </div>
                 </div>
+                
+                {/* UTU90 */}
+
+                <div id="carouselExampleIndicators2" className="carousel slide" data-ride="carousel">
+                    <ol className="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="0" className="active"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                        {/* <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li> */}
+                        {/* <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li> */}
+                    </ol>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Futu001.jpg?alt=media&token=63c847d1-dfc9-4435-9c45-99f61de79346" />
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Futu002.jpg?alt=media&token=77368103-ebdc-4c61-86df-baa4ca2749bb" alt="Second slide" />
+                        </div>
+                        {/* <div className="carousel-item">
+                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Futu003.jpg?alt=media&token=704fe120-eed8-430e-b576-3929589ba6be" alt="Third slide" />
+                        </div> */}
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Futu004.jpg?alt=media&token=a3ca38ea-8ccd-4a19-b46d-045fca8105c1" alt="Fourth slide" />
+                        </div>
+                        {/* <div className="carousel-item">
+                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Futu005.jpg?alt=media&token=05071359-4e39-4fa1-b687-a7c46dd81b21" alt="Fifth slide" />
+                        </div> */}
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Futu006.jpg?alt=media&token=d27a65c8-7b51-4c35-a21d-47a133e82fe2" alt="Sixth slide" />
+                        </div>
+                    </div>
+                    <a className="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Previous</span>
+                    </a>
+                    <a className="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Next</span>
+                    </a>
+                </div>
+
+                {/* FIN UTU90 */}
 
                 {/* VAU100 */}
 
@@ -66,82 +109,12 @@ class Products extends Component {
 
                 {/* FIN VAU100 */}
 
-                {/* UTU90 */}
 
-                <div id="carouselExampleIndicators2" className="carousel slide" data-ride="carousel">
-                    <ol className="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators2" data-slide-to="0" className="active"></li>
-                        <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
-                     {/*    <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li> */}
-                        {/* <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li> */}
-                    </ol>
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Futu001.jpg?alt=media&token=63c847d1-dfc9-4435-9c45-99f61de79346" />
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Futu002.jpg?alt=media&token=77368103-ebdc-4c61-86df-baa4ca2749bb" alt="Second slide" />
-                        </div>
-                        {/* <div className="carousel-item">
-                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Futu003.jpg?alt=media&token=704fe120-eed8-430e-b576-3929589ba6be" alt="Third slide" />
-                        </div> */}
-                        <div className="carousel-item">
-                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Futu004.jpg?alt=media&token=a3ca38ea-8ccd-4a19-b46d-045fca8105c1" alt="Fourth slide" />
-                        </div>
-                        {/* <div className="carousel-item">
-                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Futu005.jpg?alt=media&token=05071359-4e39-4fa1-b687-a7c46dd81b21" alt="Fifth slide" />
-                        </div> */}
-                        <div className="carousel-item">
-                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Futu006.jpg?alt=media&token=d27a65c8-7b51-4c35-a21d-47a133e82fe2" alt="Sixth slide" />
-                        </div>
-                    </div>
-                    <a className="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="sr-only">Previous</span>
-                    </a>
-                    <a className="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="sr-only">Next</span>
-                    </a>
-                </div>
+                {/* RAEPUU120 */}
+                {/* Fin RAEPUU120 */}
 
-                {/* FIN UTU90 */}
-
-                {/* Raepuu120 */}
-
-                <div id="carouselExampleIndicators3" className="carousel slide" data-ride="carousel">
-                    <ol className="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators3" data-slide-to="0" className="active"></li>
-                        <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
-                    </ol>
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Fvau001.jpg?alt=media&token=6b9f9a29-b2f0-4563-b243-580e9fe785f0" alt="First slide" />
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Fvau002.jpg?alt=media&token=5d39b1cb-a19a-4e32-879c-7f060375b52e" alt="Second slide" />
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Fvau004.jpg?alt=media&token=d68e189e-65a1-4fc7-8e19-c9482cd316d5" alt="Third slide" />
-                        </div>
-                        <div className="carousel-item">
-                            <img className="d-block w-100" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fproducts%2Fvau005.jpg?alt=media&token=6096f7d8-be63-49c7-b9c0-af4564a2e364" alt="Third slide" />
-                        </div>
-                    </div>
-                    <a className="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="sr-only">Previous</span>
-                    </a>
-                    <a className="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="sr-only">Next</span>
-                    </a>
-                </div>
-                {/* Fin Raepuu120 */}
+                {/* AVE130 */}
+                {/* Fin AVE130 */}
             </div>
 
 

@@ -23,39 +23,37 @@ class Layout extends Component {
                 </div>
  */}
 
-                
-                    <nav className="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button darkNavClass navBg">
-                        
-                            <a className="navbar-brand aNav"><Link to={'/'}>
-                                <img className="img-fluid imgNav" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Flogoicon.png?alt=media&token=8764ac38-e041-4f7a-8602-ba113b70d07b" />Mr. Joints Spearfishing</Link></a>
-                            <button className="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
-                                <span className="sr-only">Toggle navigation</span>
-                                <span className="navbar-toggler-icon"></span>
-                            </button>
-                            <div className="collapse navbar-collapse navCol" id="navcol-1">
-                                <ul className="nav navbar-nav ml-auto">
-                                    <li className="nav-item" role="presentation">
-                                        <a className="nav-link colorNav">
-                                            <i className="fa fa-home"></i><Link to={'/'}>Accueil</Link></a>
-                                    </li>
-                                    <li className="nav-item" role="presentation">
-                                        <a className="nav-link colorNav"><Link to={'/Products'}>Produit</Link></a>
-                                    </li>
-                                    <li className="nav-item" role="presentation">
-                                        <a className="nav-link colorNav"><Link to={'/Lifestyles'}>Lifestyle</Link></a>
-                                    </li>
-                                    <li className="nav-item" role="presentation">
-                                        <a className="nav-link colorNav"><Link to={'/about'}>Contact</Link></a>
-                                    </li>
-                                </ul>
-                            </div>
-                    
-                    </nav>
-                
+                {/* BARRE DE NAVIGATION */}
+                <nav className="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button darkNavClass navBg">
+                    <a className="navbar-brand aNav"><Link to={'/'}>
+                        <img className="img-fluid imgNav" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Flogoicon.png?alt=media&token=8764ac38-e041-4f7a-8602-ba113b70d07b" />Mr. Joints Spearfishing</Link></a>
+                    <button className="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                        <span className="sr-only">Toggle navigation</span>
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse navCol" id="navcol-1">
+                        <ul className="nav navbar-nav ml-auto">
+                            <li className="nav-item" role="presentation">
+                                <a className="nav-link colorNav">
+                                    <i className="fa fa-home"></i><Link to={'/'}>Accueil</Link></a>
+                            </li>
+                            <li className="nav-item" role="presentation">
+                                <a className="nav-link colorNav"><Link to={'/Products'}>Produit</Link></a>
+                            </li>
+                            <li className="nav-item" role="presentation">
+                                <a className="nav-link colorNav"><Link to={'/Lifestyles'}>Lifestyle</Link></a>
+                            </li>
+                            <li className="nav-item" role="presentation">
+                                <a className="nav-link colorNav"><Link to={'/about'}>Contact</Link></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                {/* FIN BARRE DE NAVIGATION */}
 
                 <div>{this.props.children}</div>
 
-
+                {/* PIED DE PAGE */}
                 <section className="row">
                     <div className="col-md-12 footer-basic">
                         <footer>
@@ -121,6 +119,7 @@ class Layout extends Component {
                         <li><Link to={'/Lifestyles'}>Lifestyle</Link></li>
                         <li><Link to={'/about'}>Contact</Link></li>
                     </ul> */}
+                {/* FIN PIED DE PAGE */}
             </div >
 
         );
