@@ -2,6 +2,7 @@ import React, { Component }
     from 'react';
 import './home.css';
 import * as firebase from 'firebase';
+import Lightbox from 'react-images';
 
 class Home extends Component {
 
@@ -11,7 +12,66 @@ class Home extends Component {
             items: []
         }
 
+        this.closeLightbox = this.closeLightbox.bind(this);
+        this.openLightbox = this.openLightbox.bind(this);
+        this.gotoNext = this.gotoNext.bind(this);
+        this.gotoPrevious = this.gotoPrevious.bind(this);
+
     }
+
+
+
+    openLightbox(event, obj) {
+
+        this.setState({
+
+            currentImage: obj.index,
+
+            lightboxIsOpen: true
+
+        });
+
+    }
+
+
+
+    closeLightbox() {
+
+        this.setState({
+
+            currentImage: 0,
+
+            lightboxIsOpen: false
+
+        });
+
+    }
+
+
+
+    gotoPrevious() {
+
+        this.setState({
+
+            currentImage: this.state.currentImage - 1
+
+        });
+
+    }
+
+
+
+    gotoNext() {
+
+        this.setState({
+
+            currentImage: this.state.currentImage + 1
+
+        });
+
+    }
+
+
 
     componentDidMount() {
 
@@ -30,7 +90,6 @@ class Home extends Component {
                 })
             })
     }
-
     render() {
         return (
             <div className='body-content'>
@@ -73,7 +132,9 @@ class Home extends Component {
                                 <div className="center-block-img">
                                     {this.state.items.map((image) => {
                                         return (
-                                            <img className="rounded mx-auto img-thumbnail ul-img" src={image.url} />
+                                            
+                                                <img id="myImg" onClick={this.openLightbox} className="rounded mx-auto img-thumbnail ul-img" src={image.url} />
+                
                                         )
                                     })}
                                 </div>
@@ -82,6 +143,15 @@ class Home extends Component {
 
 
                     </div>
+
+                    {/* <Lightbox
+                        images={[this.state.items.url]}
+                        isOpen={this.state.lightboxIsOpen}
+                        onClickPrev={this.gotoPrevious}
+                        onClickNext={this.gotoNext}
+                        onClose={this.closeLightbox}
+                    /> */}
+
                     <div className='col-2'></div>
 
                 </div>
