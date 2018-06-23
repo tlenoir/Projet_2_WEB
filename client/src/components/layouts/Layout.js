@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../../asset/logoicon.png';
 import './layout.css';
 
 
@@ -28,7 +27,7 @@ class Layout extends Component {
                     <nav className="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button darkNavClass navBg">
                         
                             <a className="navbar-brand aNav"><Link to={'/'}>
-                                <img className="img-fluid imgNav" src={logo} />Mr. Joints Spearfishing</Link></a>
+                                <img className="img-fluid imgNav" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Flogoicon.png?alt=media&token=8764ac38-e041-4f7a-8602-ba113b70d07b" />Mr. Joints Spearfishing</Link></a>
                             <button className="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
                                 <span className="sr-only">Toggle navigation</span>
                                 <span className="navbar-toggler-icon"></span>
