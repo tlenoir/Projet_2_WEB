@@ -43,9 +43,9 @@ class Layout extends Component {
                             <li className="nav-item" role="presentation">
                                 <a className="nav-link colorNav"><Link to={'/Lifestyles'}>Lifestyle</Link></a>
                             </li>
-                            <li className="nav-item" role="presentation">
+                            {/*    <li className="nav-item" role="presentation">
                                 <a className="nav-link colorNav"><Link to={'/about'}>Contact</Link></a>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </nav>
@@ -74,9 +74,9 @@ class Layout extends Component {
                                                     <li>
                                                         <a><Link to={'/Lifestyles'}>Lifestyle</Link></a>
                                                     </li>
-                                                    <li>
+                                                    {/*  <li>
                                                         <a><Link to={'/about'}>Contact</Link></a>
-                                                    </li>
+                                                    </li> */}
                                                 </ul>
                                             </div>
                                             <div className="col-md-6 item text">
