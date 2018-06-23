@@ -6,7 +6,11 @@ class Lifestyles extends Component {
     render() {
         return ( 
         <div>
-            <div>home</div> 
+            <div className='row titlepage'>
+                    <div className='col-md-12'>
+                    Lifestyles
+                    </div>
+                </div> 
         </div>
         )
     }

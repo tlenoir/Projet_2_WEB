@@ -4,7 +4,7 @@ import { Route, BrowserRouter } from 'react-router-dom';
 import Home from './components/layouts/Home';
 import About from './components/layouts/About';
 import Products from './components/layouts/Products';
-import Lifestyle from './components/layouts/Lifestyles';
+import Lifestyles from './components/layouts/Lifestyles';
 import Layout from './components/layouts/Layout';
 import { Provider } from 'react-redux';
 import store from './stores/store';
@@ -18,7 +18,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/products" component={Products} />
-            <Route path="/lifestyle" component={Lifestyle} />
+            <Route path="/lifestyles" component={Lifestyles} />
           </Layout>
         </BrowserRouter>
       </Provider>

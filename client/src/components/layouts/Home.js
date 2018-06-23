@@ -39,12 +39,6 @@ class Home extends Component {
                         Home
                     </div>
                 </div>
-                {/*  <div className='row'>
-
-                <div className='col-md-12'>
-                    <img className='img-fluid d-none d-sm-block imgBan' src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fac003.jpg?alt=media&token=1a449d1b-7395-4732-b986-0700b6e812df" />
-                </div>
-            </div> */}
 
                 <div className='row'>
 
