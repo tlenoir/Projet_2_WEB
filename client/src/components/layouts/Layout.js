@@ -35,7 +35,7 @@ class Layout extends Component {
                         <ul className="nav navbar-nav ml-auto">
                             <li className="nav-item" role="presentation">
                                 <a className="nav-link colorNav">
-                                    <i className="fa fa-home"></i><Link to={'/'}>Accueil</Link></a>
+                                    <i className="fa fa-home"></i><Link to={'/'}>Home</Link></a>
                             </li>
                             <li className="nav-item" role="presentation">
                                 <a className="nav-link colorNav"><Link to={'/Products'}>Product</Link></a>
