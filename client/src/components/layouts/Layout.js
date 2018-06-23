@@ -66,7 +66,7 @@ class Layout extends Component {
                                                 <h3>Links</h3>
                                                 <ul>
                                                     <li>
-                                                        <a><Link to={'/'}>Accueil</Link></a>
+                                                        <a><Link to={'/'}>Home</Link></a>
                                                     </li>
                                                     <li>
                                                         <a><Link to={'/Products'}>Product</Link></a>

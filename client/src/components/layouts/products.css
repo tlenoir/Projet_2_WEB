@@ -7,7 +7,13 @@ productImg {
 }
 
 .caroussImg {
-    height: auto;
-    width: auto;
-    overflow: hidden;
+
+  margin-top: -2%;
+}
+
+.nameGun p {
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  background-color: rgba(25, 51, 201, 0.123);
 }
