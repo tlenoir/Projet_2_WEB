@@ -26,7 +26,7 @@
 }
 
 .aNav {
-  font-family: 'Annie Use Your Telescope', cursive;
+  font-family: 'Architects Daughter';
   width: 380px;
   font-size: 20px;
   height: 95px;
@@ -205,6 +205,17 @@ a:visited {
 }
 @media (min-width:993px) {
   .imgBan {
-    margin-top: -5%;
+    margin-top: -10%;
+    
+  }
+}
+@media (min-width:768px) {
+  .imgBan {
+    margin-top: -12%;
+  }
+}
+@media (min-width:767px) {
+  .imgBan {
+    margin-top: -15%;
   }
 }

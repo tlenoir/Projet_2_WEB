@@ -38,7 +38,7 @@ class Layout extends Component {
                                     <i className="fa fa-home"></i><Link to={'/'}>Accueil</Link></a>
                             </li>
                             <li className="nav-item" role="presentation">
-                                <a className="nav-link colorNav"><Link to={'/Products'}>Produit</Link></a>
+                                <a className="nav-link colorNav"><Link to={'/Products'}>Product</Link></a>
                             </li>
                             <li className="nav-item" role="presentation">
                                 <a className="nav-link colorNav"><Link to={'/Lifestyles'}>Lifestyle</Link></a>
@@ -50,6 +50,7 @@ class Layout extends Component {
                     </div>
                 </nav>
                 {/* FIN BARRE DE NAVIGATION */}
+                <img className='img-fluid imgBan' src='https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fac003.jpg?alt=media&token=1a449d1b-7395-4732-b986-0700b6e812df' />
 
                 <div>{this.props.children}</div>
 
@@ -61,33 +62,21 @@ class Layout extends Component {
                                 <footer>
                                     <div className="container">
                                         <div className="row">
-                                            <div className="col-sm-6 col-md-3 item">
-                                                <h3>Services</h3>
+                                            <div className="col-sm-6 col-md-6 item">
+                                                <h3>Links</h3>
                                                 <ul>
                                                     <li>
-                                                        <a href="#">Web design</a>
+                                                        <a><Link to={'/'}>Accueil</Link></a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Development</a>
+                                                        <a><Link to={'/Products'}>Product</Link></a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Hosting</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div className="col-sm-6 col-md-3 item">
-                                                <h3>About</h3>
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Company</a>
+                                                        <a><Link to={'/Lifestyles'}>Lifestyle</Link></a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Team</a>
+                                                        <a><Link to={'/about'}>Contact</Link></a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#">Careers</a>
-                                                    </li>
-
                                                 </ul>
                                             </div>
                                             <div className="col-md-6 item text">
