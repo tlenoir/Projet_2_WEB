@@ -10,7 +10,7 @@ class Layout extends Component {
         return (
             <div>
 
-                <div className="navbar navbar-expand-md navbar-dark sticky-top navBg" id='global-nav'>
+                {/*            <div className="navbar navbar-expand-md navbar-dark sticky-top navBg" id='global-nav'>
                     <div className="container-fluid navStyle"><span className="text-white d-md-none"><Link to={'/'}><img className="img-fluid imgNav" src={logo} />Mr. Joints Spearfishing</Link></span><button className="btn btn-link navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"><span className="navbar-toggler-icon"></span></button>
                         <div id="main-nav" className="navbar-collapse collapse">
                             <ul className="navbar-nav nav-fill w-100">
@@ -22,6 +22,36 @@ class Layout extends Component {
                         </div>
                     </div>
                 </div>
+ */}
+
+                
+                    <nav className="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button darkNavClass navBg">
+                        
+                            <a className="navbar-brand aNav"><Link to={'/'}>
+                                <img className="img-fluid imgNav" src={logo} />Mr. Joints Spearfishing</Link></a>
+                            <button className="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                                <span className="sr-only">Toggle navigation</span>
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
+                            <div className="collapse navbar-collapse navCol" id="navcol-1">
+                                <ul className="nav navbar-nav ml-auto">
+                                    <li className="nav-item" role="presentation">
+                                        <a className="nav-link colorNav">
+                                            <i className="fa fa-home"></i><Link to={'/'}>Accueil</Link></a>
+                                    </li>
+                                    <li className="nav-item" role="presentation">
+                                        <a className="nav-link colorNav"><Link to={'/Products'}>Produit</Link></a>
+                                    </li>
+                                    <li className="nav-item" role="presentation">
+                                        <a className="nav-link colorNav"><Link to={'/Lifestyles'}>Lifestyle</Link></a>
+                                    </li>
+                                    <li className="nav-item" role="presentation">
+                                        <a className="nav-link colorNav"><Link to={'/about'}>Contact</Link></a>
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    </nav>
                 
 
                 <div>{this.props.children}</div>
