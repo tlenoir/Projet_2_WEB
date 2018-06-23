@@ -15,48 +15,18 @@
   }
 }
 
-.navStyle {
-  width: 650px;
-}
-@media (min-width:576px) {
-  .navBg {
-    background-color: #081d33d3;
-  }
-}
-@media (max-width:575px) {
-  .navBg {
-    background-color: #081d33;
-  }
-}
-
-/* .darkNavClass {
-  height: 50px;
-  background-color: #143352;
+.darkNavClass {
+  height: 75px;
+  background-color: #081d33;
   color: #ffffff;
-} */
-@media (min-width:993px) {
-  .imgBan {
-    margin-top: -5%;
-  }
-}
-@media (max-width:992px) {
-  .imgBan {
-    margin-top: -5%;
-  }
-}
-@media (max-width:768px) {
-  .imgBan {
-    margin-top: -20%;
-  }
 }
 
 .imgNav {
   width: 110px;
 }
 
-
 .aNav {
-  font-family: 'Annie Use Your Telescope', cursive;
+  font-family: 'Architects Daughter';
   width: 380px;
   font-size: 20px;
   height: 95px;
@@ -221,4 +191,31 @@ a:visited {
   opacity: .3;
   font-size: 13px;
   margin-bottom: 0;
+}
+
+@media (min-width:576px) {
+  .navBg {
+    background-color: #081d33d3;
+  }
+}
+@media (max-width:575px) {
+  .navBg {
+    background-color: #081d33;
+  }
+}
+@media (min-width:993px) {
+  .imgBan {
+    margin-top: -10%;
+    
+  }
+}
+@media (min-width:768px) {
+  .imgBan {
+    margin-top: -12%;
+  }
+}
+@media (min-width:767px) {
+  .imgBan {
+    margin-top: -15%;
+  }
 }

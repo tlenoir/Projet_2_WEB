@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../../asset/logoicon.png';
-import './layout.css'
+import './layout.css';
+
 
 class Layout extends Component {
     render() {
         return (
             <div>
-                <div className="navbar navbar-expand-md navbar-dark sticky-top navBg">
+
+                {/*            <div className="navbar navbar-expand-md navbar-dark sticky-top navBg" id='global-nav'>
                     <div className="container-fluid navStyle"><span className="text-white d-md-none"><Link to={'/'}><img className="img-fluid imgNav" src={logo} />Mr. Joints Spearfishing</Link></span><button className="btn btn-link navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"><span className="navbar-toggler-icon"></span></button>
                         <div id="main-nav" className="navbar-collapse collapse">
                             <ul className="navbar-nav nav-fill w-100">
@@ -20,15 +21,40 @@ class Layout extends Component {
                         </div>
                     </div>
                 </div>
-                <div className='row'>
-                    <div className='col-md-12'>
-                        <img className='img-fluid d-none d-sm-block imgBan' src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fac003.jpeg?alt=media&token=e069815d-811c-4c1f-8a47-dd6152444bbc" />
+ */}
+
+                {/* BARRE DE NAVIGATION */}
+                <nav className="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button darkNavClass navBg">
+                    <a className="navbar-brand aNav"><Link to={'/'}>
+                        <img className="img-fluid imgNav" src="https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Flogoicon.png?alt=media&token=8764ac38-e041-4f7a-8602-ba113b70d07b" />Mr. Joints Spearfishing</Link></a>
+                    <button className="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                        <span className="sr-only">Toggle navigation</span>
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse navCol" id="navcol-1">
+                        <ul className="nav navbar-nav ml-auto">
+                            <li className="nav-item" role="presentation">
+                                <a className="nav-link colorNav">
+                                    <i className="fa fa-home"></i><Link to={'/'}>Accueil</Link></a>
+                            </li>
+                            <li className="nav-item" role="presentation">
+                                <a className="nav-link colorNav"><Link to={'/Products'}>Product</Link></a>
+                            </li>
+                            <li className="nav-item" role="presentation">
+                                <a className="nav-link colorNav"><Link to={'/Lifestyles'}>Lifestyle</Link></a>
+                            </li>
+                            <li className="nav-item" role="presentation">
+                                <a className="nav-link colorNav"><Link to={'/about'}>Contact</Link></a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                </nav>
+                {/* FIN BARRE DE NAVIGATION */}
+                <img className='img-fluid imgBan' src='https://firebasestorage.googleapis.com/v0/b/fishingw-45678.appspot.com/o/root%2Fac003.jpg?alt=media&token=1a449d1b-7395-4732-b986-0700b6e812df' />
 
                 <div>{this.props.children}</div>
 
-
+                {/* PIED DE PAGE */}
                 <section className="row">
                     <div className="col-md-12 footer-basic">
                         <footer>
@@ -36,33 +62,21 @@ class Layout extends Component {
                                 <footer>
                                     <div className="container">
                                         <div className="row">
-                                            <div className="col-sm-6 col-md-3 item">
-                                                <h3>Services</h3>
+                                            <div className="col-sm-6 col-md-6 item">
+                                                <h3>Links</h3>
                                                 <ul>
                                                     <li>
-                                                        <a href="#">Web design</a>
+                                                        <a><Link to={'/'}>Accueil</Link></a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Development</a>
+                                                        <a><Link to={'/Products'}>Product</Link></a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Hosting</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div className="col-sm-6 col-md-3 item">
-                                                <h3>About</h3>
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Company</a>
+                                                        <a><Link to={'/Lifestyles'}>Lifestyle</Link></a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Team</a>
+                                                        <a><Link to={'/about'}>Contact</Link></a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#">Careers</a>
-                                                    </li>
-
                                                 </ul>
                                             </div>
                                             <div className="col-md-6 item text">
@@ -94,6 +108,7 @@ class Layout extends Component {
                         <li><Link to={'/Lifestyles'}>Lifestyle</Link></li>
                         <li><Link to={'/about'}>Contact</Link></li>
                     </ul> */}
+                {/* FIN PIED DE PAGE */}
             </div >
 
         );

@@ -1,0 +1,13 @@
+productImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.caroussImg {
+    height: auto;
+    width: auto;
+    overflow: hidden;
+}
