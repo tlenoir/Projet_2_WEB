@@ -73,7 +73,7 @@ class Home extends Component {
                                     {this.state.items.map((image) => {
                                         return (
 
-                                            <a href={image.url} data-toggle="lightbox" data-gallery="example-gallery" data-title="Spearfishing" data-footer={image.text}>
+                                            <a href={image.url300} data-toggle="lightbox" data-gallery="example-gallery" data-title="Spearfishing" data-footer={image.text}>
                                                 <img className="rounded mx-auto img-thumbnail ul-img img-fluid" src={image.url} />
                                             </a>
                                         )
